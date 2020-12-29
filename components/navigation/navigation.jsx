@@ -1,9 +1,10 @@
-/* eslint-disable react/react-in-jsx-scope */
+import Logo from '../logo/logo';
+
 const Navigation = () => (
   <nav className="navigation">
     <ul className="navigation-list">
       <li className="navigation-list-item">
-        {/* <img src="" /> */}
+        <Logo />
       </li>
 
       <li className="navigation-list-item">

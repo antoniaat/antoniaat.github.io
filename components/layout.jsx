@@ -1,9 +1,15 @@
-import '../styles/generic/global.scss';
+import { node } from 'prop-types';
 
 const Layout = ({ children }) => (
-  <div className="page-content-wrapper">
+  <>
+    {/* <Header /> */}
     {children}
-  </div>
+    {/* <Footer /> */}
+  </>
 );
+
+Layout.propTypes = {
+  children: node.isRequired,
+};
 
 export default Layout;
