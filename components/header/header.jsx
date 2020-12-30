@@ -4,13 +4,13 @@ import headerImg from '../../assets/images/header.svg';
 import { PROFESSION, WEBSITE_TITLE } from '../../scripts/constants/constants';
 
 import {
-  wrapper, title, subtitle, avatar, image,
+  wrapper, subtitle, avatar, image,
 } from '../../styles/components/header/header.module.scss';
 
 const Header = () => (
   <header className={wrapper}>
     <Flip top>
-      <h1 className={title}>
+      <h1>
         {PROFESSION}
       </h1>
     </Flip>
