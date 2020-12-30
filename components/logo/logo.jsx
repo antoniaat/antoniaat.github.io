@@ -1,14 +1,10 @@
-import styles from '../../styles/components/logo/logo.module.scss';
+import { logo, initials } from '../../styles/components/logo/logo.module.scss';
 
-const Logo = () => {
-  const { logo, initials } = styles;
-
-  return (
-    <article className={logo}>
-      antonia
-      <span className={initials}>At</span>
-    </article>
-  );
-};
+const Logo = () => (
+  <article className={logo}>
+    antonia
+    <span className={initials}>AT</span>
+  </article>
+);
 
 export default Logo;
