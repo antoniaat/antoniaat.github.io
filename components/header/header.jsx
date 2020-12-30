@@ -4,7 +4,7 @@ import headerImg from '../../assets/images/header.svg';
 import { PROFESSION, WEBSITE_TITLE } from '../../scripts/constants/constants';
 
 import {
-  wrapper, title, subtitle, green, avatar, image,
+  wrapper, title, subtitle, avatar, image,
 } from '../../styles/components/header/header.module.scss';
 
 const Header = () => (
