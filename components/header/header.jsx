@@ -1,7 +1,7 @@
 import { wrapper, title, subtitle } from '../../styles/components/header/header.module.scss';
 import { PROFESSION } from '../../scripts/constants/constants';
 
-const Header = () => {
+const Header = () => (
   <header className={wrapper}>
     <h1 className={title}>
       {PROFESSION}
@@ -9,7 +9,7 @@ const Header = () => {
     <h3 className={subtitle}>
       I design websites that help businesses grow.
     </h3>
-  </header>;
-};
+  </header>
+);
 
 export default Header;
