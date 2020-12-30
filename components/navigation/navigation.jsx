@@ -1,15 +1,22 @@
+import { navigation, list, item } from '../../styles/components/navigation/navigation.module.scss';
+import { CONTACT_EMAIL } from '../../scripts/constants/constants';
 import Logo from '../logo/logo';
+import Button from '../button';
+
+const href = `mailto:${CONTACT_EMAIL}`;
 
 const Navigation = () => (
-  <nav className="navigation">
-    <ul className="navigation-list">
-      <li className="navigation-list-item">
+  <nav className={navigation}>
+    <ul className={list}>
+      <li className={item}>
         <Logo />
       </li>
-
-      <li className="navigation-list-item">
-        SAY HELLO
-      </li>
+      <Button
+        type="outline"
+        className={item}
+      >
+        <a href={href}>SAY HELLO</a>
+      </Button>
     </ul>
   </nav>
 );

@@ -1,0 +1,12 @@
+
+.list {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.item {
+    list-style: none;
+}
