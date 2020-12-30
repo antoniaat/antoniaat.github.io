@@ -1,9 +1,19 @@
+@font-face {
+    font-family: 'Saira Extra Condensed';
+    src: url('../../assets/fonts/SairaExtraCondensed-Medium.ttf') format('truetype'),
+}
+
 *,
 *::before,
 *::after {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Saira Extra Condensed', sans-serif;
 }
