@@ -1,0 +1,44 @@
+.content {
+    display: none;
+    position: relative;
+    margin-top: -172px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+}
+
+.project {
+    border-radius: 12px;
+}
+
+.project:hover {
+    cursor: pointer;
+
+    .content {
+        display: block;
+    }
+
+    .projectImg {
+        transition: filter 0.5s ease-in-out;
+        filter: brightness(0.2);
+    }
+}
+
+.projectImg {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: filter 0.5s ease-in-out;
+    filter: brightness(0.8);
+}
+
+.cta {
+    background: transparent;
+    margin-top: 20px;
+
+    a {
+        color: #fff;
+    }
+}
