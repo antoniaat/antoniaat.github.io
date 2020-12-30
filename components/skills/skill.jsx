@@ -1,3 +1,4 @@
+import Flip from 'react-reveal/Flip';
 import { string, instanceOf } from 'prop-types';
 import {
   skillContainer, skillHeader, skillTitle, skillHeaderTitle, img, item,
@@ -24,7 +25,9 @@ const Skill = ({
         alt={title}
         className={img}
       />
-      <h4 className={skillTitle}>{title}</h4>
+      <Flip top>
+        <h4 className={skillTitle}>{title}</h4>
+      </Flip>
       <p>
         {subtitle}
       </p>
@@ -37,7 +40,11 @@ const Skill = ({
         <ul>
           {
               skills.map((skill) => (
-                <li className={item}>{skill}</li>
+                <Flip top>
+                  <li className={item}>
+                    {skill}
+                  </li>
+                </Flip>
               ))
           }
         </ul>

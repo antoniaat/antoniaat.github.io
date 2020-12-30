@@ -1,12 +1,15 @@
+import Flip from 'react-reveal/Flip';
 import { container, title, description } from '../../styles/components/about/about.module.scss';
 import Wrapper from '../wrapper';
 
 const About = () => (
   <section className={container}>
     <Wrapper>
-      <h2 className={title}>
-        Hi, I’m Tony. Nice to meet you.
-      </h2>
+      <Flip top>
+        <h2 className={title}>
+          Hi, I’m Tony. Nice to meet you.
+        </h2>
+      </Flip>
       <p className={description}>
         If you love your business as much as I love my job, we’re off to a good start!
         With YOUR VISION and my experience, we can create something that engages your
