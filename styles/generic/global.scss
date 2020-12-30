@@ -1,7 +1,7 @@
 @import './typography.scss';
 
 html,
-body {
+body, * {
     padding: 0;
     margin: 0;
 }
@@ -21,4 +21,8 @@ a {
 img {
     max-width: 100%;
     display: block;
+}
+
+li {
+    list-style: none;
 }

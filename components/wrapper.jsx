@@ -2,9 +2,9 @@ import { node } from 'prop-types';
 import { wrapper } from '../styles/components/wrapper.module.scss';
 
 const Wrapper = ({ children }) => (
-  <div className={wrapper}>
+  <section className={wrapper}>
     {children}
-  </div>
+  </section>
 );
 
 Wrapper.propTypes = { children: node.isRequired };
