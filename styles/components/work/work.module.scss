@@ -1,4 +1,5 @@
 @import '../../tools/variables.scss';
+@import '../../tools/breakpoints.scss';
 
 .title {
     font-size: 36px;
@@ -21,7 +22,15 @@
 .projectsList {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 35px;
+    grid-gap: 80px;
+
+    @include for-tablet-landscape-up {
+        grid-gap: 35px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include for-desktop-up {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
