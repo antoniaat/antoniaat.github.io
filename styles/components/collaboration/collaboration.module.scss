@@ -1,23 +1,35 @@
 @import '../../tools/variables.scss';
+@import '../../tools/breakpoints.scss';
 
 .collaboration {
-    background: $gray-800;
-    border-radius: 12px;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
-    margin-top: 100px;
-    color: #fff;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 100px;
     padding: 40px;
-    align-items: center;
+    margin-top: 30px;
     position: relative;
     bottom: -70px;
+    background: $gray-800;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+
+    @include for-tablet-landscape-up {
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 100px;
+    }
 }
 
 .title {
     font-size: 36px;
     font-family: $secondary-font;
+    text-align: center;
+    margin-bottom: 12px;
+
+    @include for-tablet-landscape-up {
+        text-align: left;
+        margin-bottom: 0;
+    }
 }
 
 .description {
@@ -28,8 +40,13 @@
 .cta {
     background: transparent;
     width: fit-content;
-    justify-self: end;
-    
+    margin: 20px auto;
+
+    @include for-tablet-landscape-up {
+        justify-self: end;
+        margin: 0;
+    }
+
     a {
         color: #fff;
     }
