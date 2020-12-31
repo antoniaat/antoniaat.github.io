@@ -1,0 +1,86 @@
+@import '../../tools/variables.scss';
+
+.footer {
+    background: $cyan;
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+
+.icons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    svg {
+        max-width: 20px;
+        max-height: 20px;
+
+        path {
+            transition: fill 0.5s ease-in-out;
+            fill: #fff;
+        }
+    }
+}
+
+.slogan {
+    color: $cyan-900;
+    font-family: $secondary-font;
+    font-size: 25px;
+}
+
+.item {
+    border: 1px solid $cyan-600;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    padding-top: 5px;
+
+    &:hover {
+        transition: background 0.5s ease-in-out;
+        background: #fff;
+        cursor: pointer;
+
+        svg {
+            path {
+                transition: fill 0.2s ease-in-out;
+                fill: $cyan;
+            }
+        }
+    }
+}
+
+.nextjs {
+    filter: brightness(0.3) invert(1);
+    max-width: 50px;
+}
+
+.copyright {
+    margin-top: 35px;
+    font-size: 16px;
+    color: $cyan-800;
+
+    svg {
+        max-width: 15px;
+        margin: 5px 5px 0 5px;
+
+        path {
+            fill: $cyan-700;
+        }
+    }
+}
+
+.madeWith {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}

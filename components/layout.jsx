@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { node } from 'prop-types';
 import { WEBSITE_TITLE } from '../scripts/constants/constants';
 import Navigation from './navigation/navigation';
+import Footer from './footer/footer';
 
 const Layout = ({ children }) => (
   <>
@@ -14,6 +15,7 @@ const Layout = ({ children }) => (
       <main>
         <Navigation />
         {children}
+        <Footer />
       </main>
     </body>
   </>
