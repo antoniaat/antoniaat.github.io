@@ -1,13 +1,29 @@
 @import './typography.scss';
+@import '../tools/variables.scss';
 
 html,
-body, * {
+body,
+* {
     padding: 0;
     margin: 0;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    &::-webkit-scrollbar {
+        width: 0.4em;
+
+        &-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        &-thumb {
+            background: $gray-800;
+        }
+    }
 }
 
 a {
