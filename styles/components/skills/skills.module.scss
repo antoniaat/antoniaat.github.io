@@ -1,6 +1,7 @@
+@import '../../tools/breakpoints.scss';
+
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     text-align: center;
     box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
     border-radius: 12px;
@@ -9,9 +10,20 @@
     background: #fff;
     margin: 0;
     padding: 0;
+
+    @include for-desktop-up {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .item:nth-child(2) {
-    border-left: 1px solid #e6ecf8;
-    border-right: 1px solid #e6ecf8;
+    border-top: 1px solid #e6ecf8;
+    border-bottom: 1px solid #e6ecf8;
+
+    @include for-desktop-up {
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #e6ecf8;
+        border-right: 1px solid #e6ecf8;
+    }
 }
