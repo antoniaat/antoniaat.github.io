@@ -3,10 +3,24 @@
 .logo {
     font-family: $secondary-font;
     font-size: 40px;
-    color: $gray;
 }
 
 .initials {
     font-family: $secondary-font;
-    color: $cyan;
+}
+
+.dark {
+    color: $gray;
+
+    .initials {
+        color: $cyan;
+    }
+}
+
+.light {
+    color: #fff;
+
+    .initials {
+        color: $cyan-900;
+    }
 }
