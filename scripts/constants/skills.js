@@ -9,7 +9,7 @@ module.exports = [
       skills: 'Wordpress, React.js',
     },
     content: {
-      title: 'The whole stack',
+      title: 'The whole stack:',
       skills: [
         'WordPress',
         'React.js',
@@ -31,7 +31,7 @@ module.exports = [
       skills: 'React.js, Sass, Less',
     },
     content: {
-      title: 'The whole stack',
+      title: 'The whole stack:',
       skills: [
         'React.js',
         'JavaScript',
@@ -47,11 +47,11 @@ module.exports = [
     title: 'Trainer',
     subtitle: 'I genuinely care about people, and love helping fellow designers work on their craft.',
     header: {
-      title: 'Most experienced',
-      skills: 'React.js, Sass, Less',
+      title: 'Experiences I draw from:',
+      skills: 'Front-end Development, Freelancing',
     },
     content: {
-      title: 'The whole stack',
+      title: 'Trainer stats:',
       skills: [
         '3 years experience',
         '20 courses',
