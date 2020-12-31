@@ -6,6 +6,7 @@
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
     margin-top: 100px;
     color: #fff;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 100px;
     padding: 40px;
