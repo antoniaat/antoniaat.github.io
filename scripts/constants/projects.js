@@ -9,7 +9,7 @@ module.exports = [
   },
   {
     title: 'TeachMe',
-    description: 'Educational institution in Bulgaria - Blog Page',
+    description: 'TeachMe is one of the newest and most inovative educational institution in Bulgaria.',
     img: {
       name: 'teachmebg',
     },
@@ -17,7 +17,7 @@ module.exports = [
   },
   {
     title: 'Jiva Recovery',
-    description: 'Vehicle breakdown cover across the UK and Europe, 24/7, 365 days a year.',
+    description: 'Jiva Trade is a vehicle breakdown cover across the UK and Europe, 24/7, 365 days a year.',
     img: {
       name: 'jivarecovery',
     },
@@ -25,7 +25,7 @@ module.exports = [
   },
   {
     title: 'Perfecta Marketing',
-    description: 'Digital Marketing Agency.',
+    description: 'Perfecta Marketing is a marketing communications agency which can offer a complete marketing service.',
     img: {
       name: 'perfectamarketing',
     },
@@ -41,7 +41,7 @@ module.exports = [
   },
   {
     title: 'Dr Gais',
-    description: 'Esthetic Dentistry & Dental Implantology.',
+    description: 'Dental center Dr. Gais is one of the leading centers for dental implantology and esthetic dentistry in Bulgaria.',
     img: {
       name: 'drgais',
     },
