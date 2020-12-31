@@ -1,6 +1,21 @@
 @font-face {
     font-family: 'Saira Extra Condensed';
-    src: url('../../assets/fonts/SairaExtraCondensed-Medium.ttf') format('truetype'),
+    src: url('../../assets/fonts/SairaExtraCondensed-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../../assets/fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../../assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
 *,
