@@ -3,7 +3,7 @@ import {
   content, cta, project, projectImg,
 } from '../../styles/components/work/project.module.scss';
 
-import softuniImg from '../../assets/images/softuni.jpg';
+import softuniImg from '../../assets/images/softuni.png';
 import perfectaMarketingImg from '../../assets/images/perfectamarketing.png';
 import drGaisImg from '../../assets/images/drgais.png';
 import teachMeImg from '../../assets/images/teachmebg.png';
