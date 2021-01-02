@@ -1,5 +1,5 @@
 import {
-  title, description, link, projectsList,
+  title, description, link, projectsList, item,
 } from '../../styles/components/work/work.module.scss';
 import { CONTACT_EMAIL } from '../../scripts/constants/constants';
 import projects from '../../scripts/constants/projects';
@@ -26,7 +26,7 @@ const Work = () => (
     <ul className={projectsList}>
       {
           projects.map(({ ...props }) => (
-            <li>
+            <li className={item}>
               <Project {...props} />
             </li>
           ))

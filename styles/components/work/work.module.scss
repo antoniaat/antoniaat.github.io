@@ -24,7 +24,7 @@
     display: grid;
     grid-gap: 80px;
 
-    @include for-tablet-landscape-up {
+    @include for-tablet-portrait-up {
         grid-gap: 35px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -33,4 +33,8 @@
     @include for-desktop-up {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.item {
+    position: relative;
 }
