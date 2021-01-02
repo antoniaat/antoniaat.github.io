@@ -27,7 +27,7 @@ module.exports = [
     title: 'Front End Developer',
     subtitle: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.',
     header: {
-      title: 'Most experienced',
+      title: 'Most experienced in',
       skills: 'React.js, Sass, Less',
     },
     content: {
@@ -47,7 +47,7 @@ module.exports = [
     title: 'Trainer',
     subtitle: 'I genuinely care about people, and love helping fellow designers work on their craft.',
     header: {
-      title: 'Experiences I draw from:',
+      title: 'Gained experience from',
       skills: 'Front-end Development, Freelancing',
     },
     content: {
