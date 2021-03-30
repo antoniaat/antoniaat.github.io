@@ -6,3 +6,5 @@
 
 First you need to install all the needed packages with ```npm install```. After than start the project with the ```npx next start``` command.
 
+Finally open http://localhost:3000 to view it in the browser.
+
