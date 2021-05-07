@@ -21,7 +21,7 @@ const Collaboration = () => {
           type="outline"
           className={cta}
         >
-          <a href={href}>Let's do this</a>
+          <a href={href}>Let&apos;s do this</a>
         </Button>
       </section>
     </Wrapper>

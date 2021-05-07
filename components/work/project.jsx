@@ -38,7 +38,13 @@ const Project = ({
           {description}
         </p>
         <Button type="outline" className={cta}>
-          <a href={url}>SEE MORE</a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href={url}
+          >
+            SEE MORE
+          </a>
         </Button>
       </article>
     </article>
