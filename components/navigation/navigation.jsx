@@ -19,6 +19,12 @@ const Navigation = () => (
         >
           <a href={href}>SAY HELLO</a>
         </Button>
+        <Button
+          type="outline"
+          className={item}
+        >
+          <a href={href}>BLOG</a>
+        </Button>
       </ul>
     </nav>
   </Wrapper>

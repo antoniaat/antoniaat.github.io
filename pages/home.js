@@ -6,13 +6,13 @@ import Work from '../components/work/work';
 import Collaboration from '../components/collaboration/collaboration';
 
 const Home = () => (
-	<Layout>
-		<Header />
-		<About />
-		<Skills />
-		<Work />
-		<Collaboration />
-	</Layout>
+  <Layout>
+    <Header />
+    <About />
+    <Skills />
+    <Work />
+    <Collaboration />
+  </Layout>
 );
 
 export default Home;
