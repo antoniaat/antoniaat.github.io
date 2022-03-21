@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -7,7 +6,6 @@ import Wrapper from '../components/wrapper';
 
 import { list } from '../styles/components/blog/blog.module.scss';
 
-import thumbnailImgSrc from '../assets/images/thumbnail.png';
 import { BlogPost } from '../components/blog/blog-post';
 
 export const getStaticProps = async () => {

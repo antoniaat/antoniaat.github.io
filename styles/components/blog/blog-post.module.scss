@@ -7,16 +7,15 @@
 	img {
 		border-top-left-radius: 12px;
 		border-top-right-radius: 12px;
-		opacity: 0.6;
-		transition: opacity 0.5s ease;
+		transition: filter 2s ease;
+		filter: grayscale(0.8);
 	}
 
 	&:hover {
 		cursor: pointer;
 
 		img {
-			opacity: 1;
-			transition: opacity 0.5s ease;
+			filter: grayscale(0);
 		}
 	}
 }

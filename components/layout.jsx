@@ -5,24 +5,24 @@ import Navigation from './navigation/navigation';
 import Footer from './footer/footer';
 
 const Layout = ({ children }) => (
-  <>
-    <Head>
-      <title>{WEBSITE_TITLE}</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <body>
-      <main>
-        <Navigation />
-        {children}
-        <Footer />
-      </main>
-    </body>
-  </>
+	<>
+		<Head>
+			<title>{WEBSITE_TITLE}</title>
+			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			<link rel="icon" href="/favicon.ico" />
+		</Head>
+		<body>
+			<main>
+				<Navigation />
+				{children}
+				<Footer />
+			</main>
+		</body>
+	</>
 );
 
 Layout.propTypes = {
-  children: node.isRequired,
+	children: node.isRequired,
 };
 
 export default Layout;
