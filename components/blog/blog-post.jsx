@@ -5,7 +5,7 @@ import { item, content } from '../../styles/components/blog/blog-post.module.scs
 import thumbnailImgSrc from '../../assets/images/thumbnail.png';
 
 export const BlogPost = ({ slug, title, description, date }) => (
-	<article className={item}>
+	<section className={item}>
 		<Link href={'/blog/' + slug} passHref>
 			<section>
 				<article>
@@ -20,5 +20,5 @@ export const BlogPost = ({ slug, title, description, date }) => (
 				</article>
 			</section>
 		</Link>
-	</article>
+	</section>
 );

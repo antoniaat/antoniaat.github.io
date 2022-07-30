@@ -1,0 +1,44 @@
+---
+title: 'Shared Library of Components: Case Study'
+description: 'How to make the choice between Git Submodules and Git Subtree'
+date: '30 July, 2022'
+slug: 'git-submodules-or-git-subtree'
+---
+
+
+<p>
+   A week ago I dived into one of the most challenging FE tasks in my development career. Because of reasons our team needed to investigate the opportunity of creating a shared library of components between two of our projects. And since the experience is the best learner I will try to summarize what I've learned during this adventure. 
+</p>
+<p>
+   At the beggining as every developer I dived into the technical solutions. Of course, after 2 days of reading documentation of how to set up this and that I understood that this isn't the right path. First of all it's super hard to understand what are the benefits and drawbacks of using something by reading how to set it up and run some commands in it. And second - you can't say if something will fit the desired purpose if you don't know what this purpose is. 
+</p>
+<p>
+   The most essential thing before diving into the technical part is to distinguish what are the team most important criterias of working in this shared UI-kit. This is the time when you just need to get up from the laptop, grab some pen and start thinking. There were 2 main reasons for us to initiate the creation of this project - to have a dedicated team working on it, and to easily export/import the UI components from project 1 to project 2 since in the first one their accessibiliy was way more better.
+</p>
+<p>
+   So the top two priorities for our team were:
+</p>
+
+<ul>
+   <li>
+      <strong>Dedicated team</strong>  - Having a dedicated team which is going to work on this library in the beginning excluded all the monorepo approaches. I wish I had thought of that before losing 2 days of reading blog articles like "Why the monorepo is a good approach for creating a UI-kit". :(
+   </li>
+   <li>
+     <strong>Components Sync</strong> - It was not like we have all the components ready to be moved in one folder and update the usages in both projects. We even didn't know how much visual differences we have between those components, so number 1 priority was to have the opportunity to easily update them. Our decision needed to give us the opportunity to push/pull on a daily basis a lot of code without dealing with versioning problems, conflicts, and a lot of manual work.
+   </li>
+</ul>
+
+<p>
+Of course, we also wanted to keep our build time fast, our initial setup for newcomers easy, the testing coverage up to 100%, and so on. And when you give everything from yourself and write down all ideas you have what is the next step? To involve the team! I've created a quiz where I included all of my suggestions and asked the team to take a part in it. After the vote I was 100% sure what this library should give us and what are the most important criterias for choosing it.
+</p>
+
+<p>
+Now let's build our decision matrix. We already mentioned our top two priorities which are to have a dedicated team working on the library and easy components sync & updates. We will add two more options in it - build time & company-wide UI kit. The second one means that we have the ambitions to make this library used by more than 2 projects and to develop it to a company-wide UI kit.
+</p>
+
+
+
+<h1>Git Submodules</h1>
+<p>
+Having a limited time to investigate unlimited opportunities for building the tool you need it's not an easy job. The first and most famous solution that comes to our mind, of course, was Git Submodules. Although it is quite well known tool, 99% of the blog articles I found on the subject were useless. They were uselles not because they are not well-described or not on the topic but because I was not searching for how to setup Git Submodules but what are the benefits and drawnbacks using them. Of course you need to know how something works before thinking if it's going to solve your problem, so let's first start with that.
+</p>
