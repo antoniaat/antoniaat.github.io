@@ -21,7 +21,7 @@ slug: 'git-submodules-or-git-subtree'
 
 <ul>
    <li>
-      <strong>Dedicated team</strong>  - Having a dedicated team which is going to work on this library in the beginning excluded all the monorepo approaches. I wish I had thought of that before losing 2 days of reading blog articles like "Why the monorepo is a good approach for creating a UI-kit". :(
+      <strong>Dedicated team</strong>  - Having a dedicated team which is going to work on this library in the beginning excluded all the monorepo approaches. I wish I had thought of that before losing 2 days of reading blog articles like "Why the monorepo is the best approach for creating a UI-kit". :)
    </li>
    <li>
      <strong>Components Sync</strong> - It was not like we have all the components ready to be moved in one folder and update the usages in both projects. We even didn't know how much visual differences we have between those components, so number 1 priority was to have the opportunity to easily update them. Our decision needed to give us the opportunity to push/pull on a daily basis a lot of code without dealing with versioning problems, conflicts, and a lot of manual work.
@@ -42,3 +42,47 @@ Now let's build our decision matrix. We already mentioned our top two priorities
 <p>
 Having a limited time to investigate unlimited opportunities for building the tool you need it's not an easy job. The first and most famous solution that comes to our mind, of course, was Git Submodules. Although it is quite well known tool, 99% of the blog articles I found on the subject were useless. They were uselles not because they are not well-described or not on the topic but because I was not searching for how to setup Git Submodules but what are the benefits and drawnbacks using them. Of course you need to know how something works before thinking if it's going to solve your problem, so let's first start with that.
 </p>
+
+<p>
+First, we need to create a new repository for our shared library. This repository will require initial setup, installing the needed tools, tests integration, storybook, and so on. After we are ready with some of the major components (i.e. when we have something to share) we need to make this repository a submodule of our projects. Let's say that we have projects X and Y. In many articles on the internet, you will find how easy the submodule setup is. Basically, you should run `submodule add repoUrl`, and you are done. What Git is doing is cloning this repository into your project directory (just like a copy-paste that you can do on your own :)). The fun part comes after that. When you add a repository as a submodule, the thing that you are doing is adding a reference to a particular commit in that repo. So in our case, this means that if someone updates the button component in the shared library and pushes that code we need to manually update and fetch the new button version into our codebase. And this happens every time when there is a new update. 
+</p>
+
+![image](/git-submodules.png)
+
+<p>
+The other thing I was interested in was can I update the button component from the directory of project X. The short answer here is - no. You can modify the button component only if you are under the shared library repository and its branches. Yes, it can be easier for you to update your button behavior while seeing it integrated into some of the pages, but simply Git Submodules would not allow you to do it.
+</p>
+
+<p>
+A favorite approach that I find being in such a situation was to ask another developer for their experience with this technology. I have worked on many projects & teams, and I'm still in most channels and groups where the communication is. So posting a simple message like "Hey, has anybody used Git Submodules?" was a good shot. For 15 minutes talk with a developer who has worked with this I learned more about 3 days of chaotic reading on the internet.
+</p>
+
+<p>
+    So summarizing what I needed to know about Git Submodules was:
+</p>
+
+<ul>
+   <li>
+   <strong>Well Supported</strong> - It's an old technology, and you can find a solution to almost every problem you will face while using it.
+
+   </li>
+   <li>
+     <strong>Initial Setup</strong> - The initial setup it's super easy & no heavy setup for the newcomers in the project.
+   </li>
+   <li>
+     <strong>Components Sync</strong> - If you need a regular update to your components, you will find yourself into the circles of hell. You will need to run constantly git updates, synces, and of course, sometimes when you forget you will deal with a messy project. 
+   </li>
+   <li>
+     <strong>Automation</strong> - Probably your first though is "But I can automate this". Don't rely on this because when dealing with different git repositories, branches & versions the automation it's not so easy. You can add some commands to your pipelines that can help you, but you will not get rid of the whole mess for sure.
+   </li>
+
+   <li>
+     <strong>Build Time</strong> - Unfortunately, I didn't find any resources for the build time when using Git Submodules. Usually the pipelines are volatile, so you can choose how to configure them. You might want to add automatic update & build on the submodule when building the main repo or ignore it in order to keep the build time fast. 
+   </li>
+</ul>
+
+
+
+<h2> Decision Matrix - Git Submodules </h2>
+
+![image](/git-submodules-decision-matrix.png)
