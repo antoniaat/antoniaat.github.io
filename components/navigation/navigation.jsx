@@ -23,7 +23,7 @@ const Navigation = () => (
           type="outline"
           className={item}
         >
-          <a href={href}>BLOG</a>
+          <a href='/blog'>BLOG</a>
         </Button>
       </ul>
     </nav>
