@@ -71,7 +71,7 @@ The most essential thing before diving into the technical part is to distinguish
 ![image](/git-submodules-decision-matrix.png)
 <h1>Git Subtree</h1>
 <p>
-   As most of the blog article titles are "Git Subtree: The Git Submodules alternative" I decided to take a closer look at the second technology on my list. Knowing the basics of Git Submodules you can easily make a comparison between the effort for the major operations. I really liked <a href="https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/">this cheatsheet</a> which demonstrates the most trivial git commands for both. 
+   As most of the blog article titles are "Git Subtree: The Git Submodules alternative" (or <a href="https://gist.github.com/SKempin/b7857a6ff6bddb05717cc17a44091202">the Git Subtree documentation</a> pretty clear points) I decided to take a closer look at the second technology on my list. Knowing the basics of Git Submodules you can easily make a comparison between the effort for the major operations. I really liked <a href="https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/">this cheatsheet</a> which demonstrates the most trivial git commands for both. 
 </p>
 <p>
    It looks like Git Subtree is designed to solve the same problem as Git Submodules, but without being so complicated to use. It's basically like copy-pasting another repo into a folder in your project, and just checking it in as though it were your own code.
@@ -90,3 +90,58 @@ The most essential thing before diving into the technical part is to distinguish
    Git Subtree allows you to do this without any problems. 
    This would make you think that your changes will be applied in the Shared repository as well. Unfortunately, this is not going to happen. As we said the repositories are not connected, so when we commit in the /shared directory from Project 1 the changes will stay there. Now imagine that your colleague is doing the same from Proj Y. 
 </p>
+
+![image](/git-subtree-problems.png)
+
+<p>
+In the end, we need to use the same approach either choosing Submodules or Subtree. We will have a separate repository and we need to commit our updates from there. After that, we will need to sync our project repos. What will be the difference then? With Submodules, the workflow will be much more complicated.
+</p>
+
+<p>
+Finally let's take a look at our decision matrix for Git Subtree:
+</p>
+
+<ul>
+    <li>
+        <strong>Components Sync</strong> - It's still not the perfect tool for regularly updating the repository, but it's much better than Submodules. As usual, if you choose this solution you can make some automation efforts to make it work better. 
+    </li>
+    <li>
+        <strong>Build Time</strong> - The build time will be worse for sure because in Subtrees you don't have references to specific commits but a clear copy-paste of the code. This means that to build Proj 1 you will need to build everything in the subdirectories as well. 
+    </li>
+    <li>
+        <strong>Support</strong> - Git Subtree it's not an official part of Git, but it's an old tool, and you can find a lot of questions and information about it. 
+    </li>
+    <li>
+        <strong>Setup</strong> - The setup requires you to write one line of code, so we can assume that it's super easy and you don't need to learn anything new.
+    </li>
+</ul>
+
+![image](/git-subtree-decision-matrix.png)
+
+
+<h1>Git X-Modules</h1>
+
+<p>
+And with the end comes our most sexy solution. Git X-Modules is the best of both worlds. It's making the shared code super easy to maintain, and their free version offers one sync per hour for an unlimited amount of public repositories. On their website, there are straightforward videos of how it works, so I will not lose your time with this. Just go there and check it out. After verifying that we our Bitbucked Version is supported and maintained I came up with the following decision matrix about Git X-Modules:
+</p>
+
+![image](/git-x-modules-decision-matrix.png)
+
+<ul>
+    <li>
+        <strong>Support</strong>- Generaly, everything is perfect except the tool stability. I've already asked a question in their forum, and the support team was really quick answering me. Maybe if our project was smaller or not depending on the client wishes we could give it a chance.
+    </li>
+</ul>
+
+<p> 
+So after having the needed information for all of the technical solutions let's take a look one more time at our decision matrices and choose "the one". 
+</p>
+
+<h2>Git Submodules</h2>
+![image](/git-submodules-decision-matrix.png)
+
+<h2>Git Subtree</h2>
+![image](/git-subtree-decision-matrix.png)
+
+<h2>Git X-Modules</h2>
+![image](/git-x-modules-decision-matrix.png)
