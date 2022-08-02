@@ -6,7 +6,7 @@ slug: 'shared-library-of-components-case-study'
 ---
 
 A week ago I dived into one of the most challenging FE tasks in my development career. Because of reasons our team needed to investigate the opportunity of creating a shared library of components between two of our projects. And since the experience is the best learner I will try to summarize what I've learned during this adventure. 
-As every developer in the beginning I dived into technical solutions. Of course, after 2 days of reading the documentation on how to set up things I understood that this isn't the right path. First of all, it's super hard to understand what are the benefits and drawbacks of using something by reading how to set it up and run some commands in it. And second - you can't say if something will fit the desired purpose if you don't know what this purpose is.
+As every developer in the beginning I dived into technical solutions. Of course, after 2 days of reading the documentation on how to set up things I understood that this isn't the right path. First of all, it's super hard to understand what are the benefits and drawbacks of using something by reading how to set it up and run some commands in it. And second - you can't tell if something will meet a desired goal if you don't know what that goal is, right.
 
 The most essential thing before diving into the technical part is to distinguish what are the team's most important criteria for working in this shared UI kit. This is the time when you just need to get up from the laptop, grab some pen, and start thinking. There were 2 main reasons for us to initiate the creation of this project - to have a dedicated team working on it, and to easily export/import the UI components from project 1 to project 2 since in the first one their accessibility was way better.
 
@@ -85,7 +85,7 @@ Finally let's take a look at our decision matrix for Git Subtree:
 
 # Git X-Modules
 
-And with the end comes our most sexy solution. Git X-Modules is the best of both worlds. It's making the shared code super easy to maintain, and their free version offers one sync per hour for an unlimited amount of public repositories. On their website, there are straightforward videos of how it works, so I will not lose your time with this. Just go there and check it out. After verifying that we our Bitbucked Version is supported and maintained I came up with the following decision matrix about Git X-Modules:
+And with the end comes our most sexy solution. Git X-Modules is the best of both worlds. It's making the shared code super easy to maintain, and their free version offers one sync per hour for an unlimited amount of public repositories. On their website, there are <a href="https://gitmodules.com/">straightforward videos</a> of how it works, so I will not lose your time with this. Just go there and check it out. After verifying that we our Bitbucked Version is supported and maintained I came up with the following decision matrix about Git X-Modules:
 
 ![image](/git-x-modules-decision-matrix.png)
 
