@@ -1,0 +1,71 @@
+---
+title: 'Predict the Unpredictable'
+description: 'How Precise Estimates Can Make You a Great Developer'
+date: '07 August, 2022'
+slug: 'predict-the-unpredictable-estimates'
+---
+
+## How Precise Estimates Can Make You a Great Developer
+
+#### *8 minutes reading time*
+#### *07 August, 2022, Antonia Atanasova*
+
+Before diving into the topic, I want to tell you two stories. I'm telling you these stories because back then if I knew how to do estimates correctly, it would have been different.
+
+Years ago, I worked on a large project where the process of development was the following: When the business people wanted some feature (I'm saying business people because back then, there were no project managers, but the Co-founders and CEOs were dictating the product development), they made a significant document of requirements. After that, the team leader or whoever was responsible for that was doing the development ticket breakdown. And typically, it creates only two tickets - BE and FE part of the feature. So as a front-end developer, I received one big ticket, which I needed to estimate. As you can imagine, it's impossible to give an accurate estimation of something that most of the time requires months of work. Imagine a situation where you need to estimate a feature like: "Implement a new payment system" or "Custom PDF exports on the user profile" and so on. Of course, your estimation will be a magic number. The worst thing is that the business doesn't know when the features will be ready. We've had situations where important features were delayed by months, and the company lost opportunities, money, and clients because of this.
+
+The other story begins with an internal project. By internal, I mean that only the company employees were using the software. When I entered the project and started questioning the processes, I remember the project manager's answer: "Look, we don't have deadlines, sprints, estimates, and so on because this is an internal project, and we don't want to have pressure in it.". Most of the people in this project were also working on another project, so I understand this argument. After a month of working full-time, I realized things were not good. Why? Because an internal company project doesn't mean a project without work and new feature requests. So I needed to implement a lot of new stuff without "the pressure". Yeah, but when you are working on something huge that it's not split into small tasks, and you've been asked daily normal questions like "Hey, what's going on?", "How is this feature going?", you kinda feel the pressure. Not because someone is giving you a rush but just because you are not sure about your own work and you can provide an answer to the question "When is it going to be finished?".
+
+Why am I saying this to the developers, and why do we need to care? After all, we aren't usually the ones that handle improving processes and addressing such problems. Our job requires writing code, fixing bugs, reviewing PRs, and so on. Well, I don't think so. In my opinion, it doesn't matter what your position is. You need to raise your voice if you see a workflow problem or think something can be improved. Our field commonly sees people constantly changing their companies because they don't like something there. And most of the time, this is related to the processes, management decisions, workflows, etc. That saddens me because nowadays, people don't care about their companies and jobs, and they easily throw everything and jump to the next offer. So, guys, please don't be one of these cases and be brave to talk when something in your work bothers you.
+
+***Credits**: Before starting, I want to give credits about the title of my topic, inspired by this lovely book: Predicting the Unpredictable Johanna Rothman. The book content is not as related to the ticket estimation as my article is, but the information there is more for project management. Nevertheless, I recommend the book if you find the topic interesting.*
+
+So let's start with the root cause - Why do we need to estimate? As you probably noticed, we are not living in a world where a customer will come to you with a bunch of money and ask you to develop a project someday when it's okay for you. The business world needs each project's size, cost, and date, which is what estimations give us exactly.
+
+Sometimes we may also want to know how much time we'll need because we're close to the end. For example, if we gave an initial estimation to a project of 8 to 12 months and we are on the 7th month, the client may ask us how much time we need to finish it. At this moment, we need to reestimate it since we have the gathered information on how the team is performing, how much work is lefts, and so on, to give a more precise estimation.
+
+Another case is when some big companies have all these developers and projects that need to be managed. 
+
+And not in the last place - we need to take responsibility for everything in this life. You can't do the payment system of a system for a year and deploy it with many bugs without being responsible for it. At least you are probably going to be the person that needs to fix these bugs.
+
+# Make Your Stories and Chunks SMALL
+
+No matter how simple this sounds, I want to illustrate it with an example. Let's imagine we need to implement the following feature: "The user should be able to download a fancy PDF version of his profile. This document will contain some aggregated data and a lot of visual styles." 
+
+![image](/predict-the-unpredictable/user-profile-preview.png)
+
+Yes, in the beginning, you are thinking, "Yeah, I can do this for a week, it's not so complicated," but remember, just because something looks easy doesn't mean it is. It's always better to do an appropriate breakdown and estimate the ticket piece by piece instead of throwing magic numbers to the full implementation. How is this breakdown, in our case, going to look? First, we will start with the most simple thing - creating the button. Been there, done that. I suppose it's not your first time making a button, so the estimation of this one should be very obvious. What's next?  As the requirements say, we need to show aggregated data in this document. That means we need to think about how to get this data, format it and maybe save it in a context or something. We've also done that many times, so again, it should be easy to estimate it. The next thing will be the PDF document design creation. As we might know, sometimes writing CSS for PDFs can be overwhelming, so we assume it will take around two days. And finally, we have all the pieces, and it's time to combine them. The button needs to trigger the data call. Then the filled PDF needs to be downloaded on the user's machine.
+
+![image](/predict-the-unpredictable/user-profile-feature-breakdown.png)
+
+# 3 Points Estimate
+
+One thing that I understood after a year and a half of working as a developer was how I estimate. I consider myself a positive person, and I'm not sure if it's really related, but at the beginning of my career, I always gave optimistic estimates. That means that every time you estimate something, you assume that everything will be perfect - you aren't tired, the BE will work perfectly, and there won't be any problems with the builds, requirements, design, and so on. As you can imagine, most of the time, you can't avoid such issues. That's why you need to be aware of what estimates you are giving. The three points of the estimate are:
+
+* **Optimistic**
+* **Likely**
+* **Pessimistic**
+
+And as with everything in life, the perfect spot is the balance which is the likely one. That is something that I would also suggest you be discussed with your team. Make sure that everyone is on the same page and that all of you are giving likely estimates. 
+
+# Collect Data on the Team's Performance
+
+Every day working with your team gives you more and more information about your pace, expected problems, and communication efforts. Of course, you won't give precise estimates if you work on this project with this team for a month. But don't pay attention only to your bowl. Observe what your colleagues are working on and how the product is being evaluated. 
+
+# Avoid Multitasking
+
+You probably know this, but repetition is the mother of knowledge. Don't expect your estimates to be precise if you are multitasking. We all know that multitasking is bad, but sometimes it doesn't depend on us. The only thing we can do is to talk - share with your manager or team leader that you don't like it and that because of it, you will not meet your estimates.
+
+# Consider the Outer job
+
+Never ever forget that the developers are not doing only coding. Part of your work also is reviewing PRs, talking with people, doing pair programming, having meetings, discussing business requirements and design, mentoring someone, and learning. So be sure that these additional activities are included in the given time.
+
+# Estimation No-Nos
+
+And to finish, I would like to share with you the biggest no-nos regarding estimations I've met.
+
+* **Do not estimate alone** - The team needs to do it. Often we are not 100% sure of our estimates, and we feel some pressure because we might not hit the promised date. Instead of feeling stressed, doing this with your team is always better. In our project, when someone needs to do a feature, the breakdown of small tickets is first done, and after that, we organize a meeting with the whole FE team. Then it's presenting each small ticket, and we all vote together. The estimation, in the end, is the average result of our votes.
+
+* **The people estimating are NOT the ones who will do the work** - Sometimes, our work and our estimations become a management target. Don't allow someone else to assess your work. You are not telling the cooker at the restaurant how much time he needs to prepare your meal, right?
+
+* **Do not give an estimation without knowing the requirements - design, dependencies, etc.** - Here comes my favorite story. A few years ago, I was working on a feature (most of it was UI work) estimated to cost 5 SP (which means five days). On day four, while I was doing the CSS and watching the Figma design, the designer started to move things and update the layout. Of course, I panicked and asked him what was happening. He said that the requirements are changed, and the UI should look different, which means that all my work needs to be deleted and started from scratch. You can suppose that my initial estimation of 5 SP was not correct anymore. In this case, you have two options: to talk with the project managers and clarify that you are starting from scratch and the estimation "is restarted" or to do some overtime and meet the initial one. Well, I don't recommend choosing the second one.
