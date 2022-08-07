@@ -29,7 +29,7 @@ Having a limited time to investigate unlimited opportunities for building the to
 
 First, we need to create a new repository for our shared library. This repository will require initial setup, installing the needed tools, tests integration, storybook, and so on. After we are ready with some of the major components (i.e., when we have something to share), we need to make this repository a submodule of our projects. Let's say that we have projects X and Y. In many articles on the internet, you will find how easy the submodule setup is. You should run `submodule add repoUrl`, and you are done. What Git is doing is cloning this repository into your project directory (just like a copy-paste that you can do on your own :)). The fun part comes after that. When you add a repository as a submodule, you are adding a reference to a particular commit in that repo. So, if someone updates the button component in the shared library and pushes that code, we need to manually update and fetch the new button version into our codebase. And this happens whenever there is a new update.
 
-![image](/git-submodules.png)
+![image](/shared-components-library/git-submodules.png)
 
 The other thing I was interested in was can I update the button component from the directory of project X. The short answer here is - no. You can modify the button component only if you are under the shared library repository and its branches. Yes, it can be easier for you to update your button behavior while seeing it integrated into some of the pages, but simply Git Submodules would not allow you to do it.
 
@@ -49,7 +49,7 @@ So summarizing what I needed to know about Git Submodules was:
    
 ## Decision Matrix - Git Submodules
 
-![image](/git-submodules-decision-matrix.png)
+![image](/shared-components-library/git-submodules-decision-matrix.png)
 
 # Git Subtree
 
@@ -61,11 +61,11 @@ Another common difference you will find on the internet is that Submodule is a l
 
 Let's simulate two very possible situations while working on our case. We have a shared components repository (Project Shared), and we want to use it in 2 of our projects. Thanks to Git Subtree, we have this Project Shared in both repos.
 
-![image](/git-subtree-repos.png)
+![image](/shared-components-library/git-subtree-repos.png)
 
 Now imagine that we never talked with our team about the process of committing, and we want to do some updates on the button component. We do our changes while at the Proj X repository and commit them from there. Git Subtree allows you to do this without any problems. That would make you think your changes will also be applied in the Shared repository. Unfortunately, this is not going to happen. As we said, the repositories are not connected, so the changes will stay there when we commit in the /shared directory from Project 1. Now imagine that your colleague is doing the same from Proj Y.
 
-![image](/git-subtree-problems.png)
+![image](/shared-components-library/git-subtree-problems.png)
 
 Ultimately, we must use the same approach, choosing Submodules or Subtree. We will have a separate repository and need to commit our updates from there. After that, we will need to sync our project repos. What will be the difference then? With Submodules, the workflow will be much more complicated.
 
@@ -79,23 +79,23 @@ Finally, let's take a look at our decision matrix for Git Subtree:
     
 * **Setup** - The setup requires you to write one line of code, so we can assume that it's super easy and you don't need to learn anything new.
     
-![image](/git-subtree-decision-matrix.png)
+![image](/shared-components-library/git-subtree-decision-matrix.png)
 
 # Git X-Modules
 
 And with the end comes our most sexy solution. Git X-Modules is the best of both worlds. It's making the shared code super easy to maintain, and their free version offers one sync per hour for an unlimited amount of public repositories. Their website has straightforward videos of how it works, so I will not lose your time with this. Just go there and check it out. After verifying that our Bitbucket Version is supported and maintained, I came up with the following decision matrix about Git X-Modules:
 
-![image](/git-x-modules-decision-matrix.png)
+![image](/shared-components-library/git-x-modules-decision-matrix.png)
 
 * **Support** - Generally, everything is perfect except the tool stability. I've already asked a question in their forum, and the support team quickly answered me. Maybe if our project was smaller or not, depending on the client's wishes, we could give it a chance.
 
 So after having the needed information for all of the technical solutions, let's look at our decision matrices one more time and choose "the one".
 
 ## Git submodules
-![image](/git-submodules-decision-matrix.png)
+![image](/shared-components-library/git-submodules-decision-matrix.png)
 
 ## Git Subtree
-![image](/git-subtree-decision-matrix.png)
+![image](/shared-components-library/git-subtree-decision-matrix.png)
 
 ## Git X-Modules
-![image](/git-x-modules-decision-matrix.png)
+![image](/shared-components-library/git-x-modules-decision-matrix.png)
