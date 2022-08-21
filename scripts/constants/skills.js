@@ -28,16 +28,19 @@ module.exports = [
     subtitle: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.',
     header: {
       title: 'Most experienced in',
-      skills: 'React.js, Sass, Less',
+      skills: 'React, TypeScript, JavaScript, CSS',
     },
     content: {
       title: 'The whole stack:',
       skills: [
-        'React.js',
+        'React',
+        'TypeScript',
         'JavaScript',
-        'CSS | Sass | Less',
-        'Bootstrap',
-        'JQuery',
+        'RxJS',
+        'Next.js',
+        'Most.js',
+        'CSS/ Preprocessors/ CSS-in-JS',
+        'Some legacies like Bootstrap & JQuery',
       ],
     },
   },
@@ -53,9 +56,9 @@ module.exports = [
     content: {
       title: 'Trainer stats:',
       skills: [
-        '3 years experience',
-        '20 courses',
-        '200+ video lectures',
+        '4 years experience',
+        '30+ courses',
+        '220+ video lectures',
         '50+ mentor sessions',
       ],
     },
