@@ -30,6 +30,7 @@ const Blog = ({ posts }) => (
 				{posts.map((post, index) => (
 					<BlogPost
 						key={index}
+						imgSrc={`/blog-thumbnails/${post.frontMatter.imgSrc}`}
 						slug={post.slug}
 						title={post.frontMatter.title}
 						description={post.frontMatter.description}

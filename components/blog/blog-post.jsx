@@ -10,12 +10,12 @@ import {
 	BlogPostStyled,
 } from './blog-post.styled';
 
-export const BlogPost = ({ slug, title, description, date }) => (
+export const BlogPost = ({ slug, title, description, date, imgSrc }) => (
 	<BlogPostStyled>
 		<Link href={'/blog/' + slug} passHref>
 			<BlogPostContentWrapperStyled>
 				<BlogPostContentImgWrapperStyled>
-					<BlogPostContentImgStyled src={thumbnailImgSrc} alt="thumbnail" />
+					<BlogPostContentImgStyled src={imgSrc} alt="thumbnail" />
 				</BlogPostContentImgWrapperStyled>
 				<BlogPostContentStyled>
 					<BlogPostContentTitleStyled>{title}</BlogPostContentTitleStyled>

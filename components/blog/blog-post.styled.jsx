@@ -7,7 +7,7 @@ export const BlogPostStyled = styled.section`
 	img {
 		border-top-left-radius: 12px;
 		border-top-right-radius: 12px;
-		transition: filter 2s ease;
+		transition: filter 1s ease;
 		filter: grayscale(0.8);
 	}
 
