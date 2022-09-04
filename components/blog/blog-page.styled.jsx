@@ -7,9 +7,7 @@ export const BlogPageStyled = styled.ul`
 
 export const BlogPageListStyled = styled.ul`
 	margin: 100px 0 250px 0;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 60px;
-	align-items: center;
-	padding: 20px;
+	display: inline-block;
+	columns: 3 auto;
+	column-gap: 20px;
 `;
