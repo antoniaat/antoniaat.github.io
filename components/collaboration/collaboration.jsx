@@ -1,5 +1,4 @@
 import { CONTACT_EMAIL } from '../../scripts/constants/global';
-import { OutlineButton } from '../common/button/button';
 import {
 	CollaborationCtaLinkStyled,
 	CollaborationCtaStyled,
