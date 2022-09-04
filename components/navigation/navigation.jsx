@@ -1,33 +1,25 @@
-import { list, item } from '../../styles/components/navigation/navigation.module.scss';
-import { CONTACT_EMAIL } from '../../scripts/constants/constants';
-import Logo from '../logo/logo';
-import Button from '../button';
-import Wrapper from '../wrapper';
+import { CONTACT_EMAIL } from '../../scripts/constants/global';
+import { Logo } from '../common/logo/logo';
+import {
+	NavigationStyled,
+	NavigationListStyled,
+	NavigationListItemStyled,
+	NavigationBtnLinkStyled,
+} from './navigation.styled';
+import { OutlineButton } from '../common/button/button';
 
-const href = `mailto:${CONTACT_EMAIL}`;
-
-const Navigation = () => (
-  <Wrapper>
-    <nav>
-      <ul className={list}>
-        <li className={item}>
-          <Logo />
-        </li>
-        <Button
-          type="outline"
-          className={item}
-        >
-          <a href={href}>SAY HELLO</a>
-        </Button>
-        <Button
-          type="outline"
-          className={item}
-        >
-          <a href='/blog'>BLOG</a>
-        </Button>
-      </ul>
-    </nav>
-  </Wrapper>
+export const Navigation = () => (
+	<NavigationStyled>
+		<NavigationListStyled>
+			<NavigationListItemStyled>
+				<Logo />
+			</NavigationListItemStyled>
+			<OutlineButton>
+				<NavigationBtnLinkStyled href={`mailto:${CONTACT_EMAIL}`}>SAY HELLO</NavigationBtnLinkStyled>
+			</OutlineButton>
+			<OutlineButton>
+				<NavigationBtnLinkStyled href="/blog">BLOG</NavigationBtnLinkStyled>
+			</OutlineButton>
+		</NavigationListStyled>
+	</NavigationStyled>
 );
-
-export default Navigation;

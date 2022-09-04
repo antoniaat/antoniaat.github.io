@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import { node } from 'prop-types';
-import { WEBSITE_TITLE } from '../scripts/constants/constants';
-import Navigation from './navigation/navigation';
-import Footer from './footer/footer';
+import { WEBSITE_TITLE } from '../scripts/constants/global';
+import { Navigation } from './navigation/navigation';
+import { Footer } from './footer/footer';
 
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
 	<>
 		<Head>
 			<title>{WEBSITE_TITLE}</title>
@@ -20,9 +19,3 @@ const Layout = ({ children }) => (
 		</body>
 	</>
 );
-
-Layout.propTypes = {
-	children: node.isRequired,
-};
-
-export default Layout;

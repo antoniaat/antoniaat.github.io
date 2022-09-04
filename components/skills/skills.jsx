@@ -1,21 +1,56 @@
-import { container, item } from '../../styles/components/skills/skills.module.scss';
+
+import { Flip } from 'react-reveal';
+import { freelancerIcon, frontEndDeveloperIcon, trainerIcon } from '../../scripts/icons/icons';
 import skills from '../../scripts/constants/skills';
-import Wrapper from '../wrapper';
-import Skill from './skill';
+import {
+	SkillContentListItemStyled,
+	SkillContentListStyled,
+	SkillContentStyled,
+	SkillHeaderStyled,
+	SkillHeaderTitleStyled,
+	SkillImgStyled,
+	SkillsListItemStyled,
+	SkillsListStyled,
+	SkillsStyled,
+	SkillStyled,
+	SkillSubtitleStyled,
+	SkillTitleStyled,
+} from './skills.styled';
 
-const Skills = () => (
-  <Wrapper>
-    <ul className={container}>
-      {skills.map(({ id, ...props }) => (
-        <li
-          key={id}
-          className={item}
-        >
-          <Skill {...props} />
-        </li>
-      ))}
-    </ul>
-  </Wrapper>
+const ICONS = {
+	freelancer: freelancerIcon,
+	frontEnd: frontEndDeveloperIcon,
+	trainer: trainerIcon,
+};
+
+export const Skills = () => (
+	<SkillsStyled>
+		<SkillsListStyled>
+			{skills.map(({ id, type, title, subtitle, header, content }) => (
+				<SkillsListItemStyled key={id}>
+					<SkillStyled>
+						<SkillImgStyled src={ICONS[type]} alt={title} />
+						<Flip top>
+							<SkillTitleStyled>{title}</SkillTitleStyled>
+						</Flip>
+						<SkillSubtitleStyled>{subtitle}</SkillSubtitleStyled>
+						<SkillHeaderStyled>
+							<SkillHeaderTitleStyled>{header.title}</SkillHeaderTitleStyled>
+							<p>{header.skills}</p>
+						</SkillHeaderStyled>
+						<SkillContentStyled>
+							<SkillHeaderTitleStyled>{content.title}</SkillHeaderTitleStyled>
+							<SkillContentListStyled>
+								{content.skills.map(skill => (
+									<Flip top>
+										<SkillContentListItemStyled>{skill}</SkillContentListItemStyled>
+									</Flip>
+								))}
+							</SkillContentListStyled>
+						</SkillContentStyled>
+					</SkillStyled>
+				</SkillsListItemStyled>
+			))}
+		</SkillsListStyled>
+	</SkillsStyled>
 );
-
-export default Skills;

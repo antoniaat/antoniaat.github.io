@@ -1,12 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Layout from '../components/layout';
-import Wrapper from '../components/wrapper';
-
-import { list } from '../styles/components/blog/blog.module.scss';
-
+import { Layout } from '../components/layout';
 import { BlogPost } from '../components/blog/blog-post';
+import { BlogPageListStyled, BlogPageStyled } from '../components/blog/blog-page.styled';
 
 export const getStaticProps = async () => {
 	const files = fs.readdirSync(path.join('posts'));
@@ -28,8 +25,8 @@ export const getStaticProps = async () => {
 
 const Blog = ({ posts }) => (
 	<Layout>
-		<Wrapper>
-			<section className={list}>
+		<BlogPageStyled>
+			<BlogPageListStyled>
 				{posts.map((post, index) => (
 					<BlogPost
 						key={index}
@@ -39,8 +36,8 @@ const Blog = ({ posts }) => (
 						date={post.frontMatter.date}
 					/>
 				))}
-			</section>
-		</Wrapper>
+			</BlogPageListStyled>
+		</BlogPageStyled>
 	</Layout>
 );
 

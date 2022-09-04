@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import Layout from '../../components/layout';
+import { Layout } from '../../components/layout';
 import { PostPage as PostPageComponent } from '../../components/blog/post-page';
 
 const components = { Layout, SyntaxHighlighter };
@@ -39,12 +39,10 @@ export const getStaticProps = async ({ params: { slug } }) => {
 	};
 };
 
-const PostPage = ({ frontMatter: { title }, mdxSource }) => {
+export const PostPage = ({ frontMatter: { title }, mdxSource }) => {
 	return (
 		<PostPageComponent title={title}>
 			<MDXRemote {...mdxSource} components={components} />
 		</PostPageComponent>
 	);
 };
-
-export default PostPage;
