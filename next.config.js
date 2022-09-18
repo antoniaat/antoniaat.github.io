@@ -1,7 +1,10 @@
 const withImages = require('next-images');
+const withFonts = require('next-fonts');
 
-module.exports = withImages({
-	images: {
-		disableStaticImages: true,
-	},
-});
+module.exports = withImages(
+	withFonts({
+		images: {
+			disableStaticImages: true,
+		},
+	}),
+);
