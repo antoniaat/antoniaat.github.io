@@ -8,7 +8,7 @@ const Home = () => (
 	<Layout>
 		<Header />
 		<About />
-		<Skills />
+		{/* <Skills /> */}
 		{/* <Work /> */}
 		<Collaboration />
 	</Layout>

@@ -38,6 +38,7 @@ export const Typography = createGlobalStyle`
 	h5,
 	h6 {
 		font-family: var(--secondary-font);
+		color: var(--gray);
 	}
 	
 	h1 {
@@ -56,5 +57,9 @@ export const Typography = createGlobalStyle`
 	
 	h5 {
 		font-size: 24px;
+	} 
+
+	p {
+		color: var(--grey);
 	}
 `;

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import thumbnailImgSrc from '../../assets/images/thumbnail.png';
 import {
 	BlogPostContentImgStyled,
 	BlogPostContentImgWrapperStyled,

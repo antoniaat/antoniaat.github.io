@@ -19,7 +19,7 @@ export const CollaborationWrapperStyled = styled.div`
 	${respondTo.tabletLandscape`
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 100px;
+        margin-top: 220px;
 	`}
 `;
 
