@@ -5,21 +5,34 @@ import {
 	NavigationListStyled,
 	NavigationListItemStyled,
 	NavigationBtnLinkStyled,
+	ThemeButtonStyled,
+	ThemeButtonImgStyled,
+	HelloBtnStyled,
+	BlogBtnStyled,
 } from './navigation.styled';
 import { OutlineButton } from '../common/button/button';
+import sunImg from '../../public/common/sun.png';
+import moonImg from '../../public/common/moon.png';
 
-export const Navigation = () => (
-	<NavigationStyled>
-		<NavigationListStyled>
-			<NavigationListItemStyled>
-				<Logo />
-			</NavigationListItemStyled>
-			<OutlineButton>
-				<NavigationBtnLinkStyled href={`mailto:${CONTACT_EMAIL}`}>SAY HELLO</NavigationBtnLinkStyled>
-			</OutlineButton>
-			<OutlineButton>
-				<NavigationBtnLinkStyled href="/blog">BLOG</NavigationBtnLinkStyled>
-			</OutlineButton>
-		</NavigationListStyled>
-	</NavigationStyled>
-);
+export const Navigation = ({ toggleTheme, isDarkTheme }) => {
+	const themeIcon = isDarkTheme ? moonImg : sunImg;
+
+	return (
+		<NavigationStyled>
+			<NavigationListStyled>
+				<NavigationListItemStyled>
+					<Logo />
+				</NavigationListItemStyled>
+				<HelloBtnStyled>
+					<NavigationBtnLinkStyled href={`mailto:${CONTACT_EMAIL}`}>SAY HELLO</NavigationBtnLinkStyled>
+				</HelloBtnStyled>
+				<BlogBtnStyled>
+					<NavigationBtnLinkStyled href="/blog">BLOG</NavigationBtnLinkStyled>
+				</BlogBtnStyled>
+				<ThemeButtonStyled onClick={toggleTheme}>
+					<ThemeButtonImgStyled src={themeIcon} />
+				</ThemeButtonStyled>
+			</NavigationListStyled>
+		</NavigationStyled>
+	);
+};
