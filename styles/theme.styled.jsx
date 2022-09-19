@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { BlogPostStyled } from '../components/blog/blog-post.styled';
 import { CollaborationDescriptionStyled, CollaborationTitleStyled, CollaborationWrapperStyled } from '../components/collaboration/collaboration.styled';
 import { LogoInitialsStyled, LogoStyled } from '../components/common/logo/logo.styled';
 
@@ -29,6 +30,10 @@ export const Theme = createGlobalStyle`
       color: ${({ theme }) => theme.collaborationText};
     }
   }
+
+  ${BlogPostStyled} {
+    box-shadow: ${({ theme }) => theme.boxShadow};
+  }
 `;
 
 export const lightTheme = {
@@ -37,6 +42,7 @@ export const lightTheme = {
 	logoInitials: 'var(--cyan)',
 	collaborationWrapper: 'var(--gray-800)',
   collaborationText: 'var(--white)',
+  boxShadow: '0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8',
 };
 
 export const darkTheme = {
@@ -45,4 +51,5 @@ export const darkTheme = {
 	logoInitials: 'var(--cyan)',
 	collaborationWrapper: 'var(--white)',
   collaborationText: 'var(--gray-900)',
+  boxShadow: '0 5px 5px 0 rgb(3 2 2 / 50%), 0 0 0 1px #2b2b2b',
 };
