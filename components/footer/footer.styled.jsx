@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const FooterStyled = styled.footer`
 	background: var(--cyan);
-	padding: 140px 0 50px 0;
+	padding: 50px 0;
 	text-align: center;
-	margin: -180px auto auto auto;
+	margin: 120px auto auto auto;
 `;
 
 export const FooterSloganStyled = styled.p`

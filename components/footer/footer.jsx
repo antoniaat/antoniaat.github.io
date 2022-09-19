@@ -16,6 +16,8 @@ import {
 	FooterStyled,
 } from './footer.styled';
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 export const Footer = () => (
 	<FooterStyled>
 		<Flip top>
@@ -32,9 +34,7 @@ export const Footer = () => (
 			</FooterIconsListStyled>
 			<FooterCopyrightStyled>
 				<FooterCopyrightTextStyled>
-					Handcrafted by me
-					<FontAwesomeIcon icon={faCopyright} />
-					antoniaat
+					All rights reserved © Antonia Atanasova {CURRENT_YEAR}
 				</FooterCopyrightTextStyled>
 				<FooterCopyrightMadeWithStyled>
 					Made with

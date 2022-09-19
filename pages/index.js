@@ -10,7 +10,7 @@ const Home = () => (
 		<About />
 		{/* <Skills /> */}
 		{/* <Work /> */}
-		<Collaboration />
+		{/* <Collaboration /> */}
 	</Layout>
 );
 
