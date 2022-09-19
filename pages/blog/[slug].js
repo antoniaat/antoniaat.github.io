@@ -39,10 +39,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
 	};
 };
 
-export const PostPage = ({ frontMatter: { title }, mdxSource }) => {
-	return (
-		<PostPageComponent title={title}>
-			<MDXRemote {...mdxSource} components={components} />
-		</PostPageComponent>
-	);
-};
+export const PostPage = ({ frontMatter: { title }, mdxSource }) => (
+	<PostPageComponent title={title}>
+		<MDXRemote {...mdxSource} components={components} />
+	</PostPageComponent>
+);

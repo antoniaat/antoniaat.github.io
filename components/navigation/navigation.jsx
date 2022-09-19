@@ -10,7 +10,6 @@ import {
 	HelloBtnStyled,
 	BlogBtnStyled,
 } from './navigation.styled';
-import { OutlineButton } from '../common/button/button';
 import sunImg from '../../public/common/sun.png';
 import moonImg from '../../public/common/moon.png';
 
