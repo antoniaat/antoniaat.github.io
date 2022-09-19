@@ -27,14 +27,18 @@ export const About = () => (
 				You can be sure that the last thing I want is to lose your time, so I'll try to be as brief as possible.
 			</AboutTextStyled>
 		</AboutHeaderStyled>
-		<AboutTitleStyled>The culture-fit part</AboutTitleStyled>
+		<Flip top>
+			<AboutTitleStyled>The culture-fit part</AboutTitleStyled>
+		</Flip>
 		<AboutTextStyled>
 			I'm 25 years old, born in Bulgaria, and currently relocating to Swiss. I am a very communicative,
 			open-minded, and good-hearted person. I love reading books, traveling, and being around nature. I always
 			strive to help others, and I genuinely believe that if we want to change the world, we should first start
 			changing ourselves.
 		</AboutTextStyled>
-		<AboutTitleStyled>The official part</AboutTitleStyled>
+		<Flip top>
+			<AboutTitleStyled>The official part</AboutTitleStyled>
+		</Flip>
 		<AboutDescriptionStyled>
 			<AboutImgStyled src={me1} />
 			<AboutTextStyled>
