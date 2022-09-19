@@ -15,12 +15,10 @@ import {
 	FooterSloganStyled,
 	FooterStyled,
 } from './footer.styled';
-import { Logo } from '../common/logo/logo';
 
 export const Footer = () => (
 	<FooterStyled>
 		<Flip top>
-			<Logo type="light" />
 			<FooterSloganStyled>Living, learning, & leveling up</FooterSloganStyled>
 			<FooterSloganStyled>one day at a time.</FooterSloganStyled>
 			<FooterIconsListStyled>

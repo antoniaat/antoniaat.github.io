@@ -19,6 +19,7 @@ export const Variables = createGlobalStyle`
 		--black: #000;
 
 		--gray-800: #141c3a;
+		--gray-900: #1f2028;
 
 		--primary-font: 'Open Sans', sans-serif;
 		--primary-font-light: 'Open Sans Light', sans-serif;

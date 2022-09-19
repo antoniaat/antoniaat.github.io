@@ -1,7 +1,7 @@
 import { LogoStyled, LogoInitialsStyled } from './logo.styled';
 
-export const Logo = ({ type }) => (
-	<LogoStyled type={type} href={'/'}>
+export const Logo = () => (
+	<LogoStyled href={'/'}>
 		antonia
 		<LogoInitialsStyled>AT</LogoInitialsStyled>
 	</LogoStyled>

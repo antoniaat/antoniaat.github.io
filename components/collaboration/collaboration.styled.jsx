@@ -11,8 +11,6 @@ export const CollaborationWrapperStyled = styled.div`
 	margin-top: 30px;
 	position: relative;
 	bottom: 110px;
-	background: var(--gray-800);
-	color: var(--white);
 	border-radius: 12px;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
 
@@ -49,10 +47,6 @@ export const CollaborationCtaStyled = styled(OutlineButtonStyled)`
         justify-self: end;
         margin: 0;
     `}
-
-	a {
-		color: var(--white);
-	}
 `;
 
 export const CollaborationCtaLinkStyled = styled.a``;

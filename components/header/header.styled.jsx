@@ -13,9 +13,7 @@ export const HeaderStyled = styled.header`
     `}
 `;
 
-export const HeaderTitleStyled = styled.h1`
-	color: var(--gray);
-`;
+export const HeaderTitleStyled = styled.h1``;
 
 export const HeaderAvatarStyled = styled.img`
 	max-width: 210px;

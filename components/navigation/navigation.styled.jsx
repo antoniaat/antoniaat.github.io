@@ -24,7 +24,6 @@ export const BlogBtnStyled = styled.a`
 
 export const NavigationListItemStyled = styled.li``;
 export const NavigationBtnLinkStyled = styled.a`
-	color: var(--gray);
 	font-weight: bold;
 	font-size: 19px;
 	
