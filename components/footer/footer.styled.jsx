@@ -4,7 +4,7 @@ export const FooterStyled = styled.footer`
 	background: var(--cyan);
 	padding: 50px 0;
 	text-align: center;
-	margin: 120px auto auto auto;
+	margin: auto;
 `;
 
 export const FooterSloganStyled = styled.p`

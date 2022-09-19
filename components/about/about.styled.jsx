@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { wrapperStyles } from '../../styles/global.styled';
 
-import { respondTo } from '../../styles/breakpoints.styled';
-
 export const AboutWrapper = styled.section`
 	${wrapperStyles};
 	color: var(--grey);
 	text-align: center;
+	margin-bottom: 120px;
 `;
 
 export const AboutTitleStyled = styled.h2`

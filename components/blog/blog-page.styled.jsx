@@ -6,7 +6,7 @@ export const BlogPageStyled = styled.ul`
 `;
 
 export const BlogPageListStyled = styled.ul`
-	margin: 100px 0 250px 0;
+	margin: 100px 0 120px 0;
 	display: inline-block;
 	columns: 3 auto;
 	column-gap: 20px;
