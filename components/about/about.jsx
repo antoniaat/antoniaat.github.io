@@ -40,7 +40,7 @@ export const About = () => (
 			<AboutTitleStyled>The official part</AboutTitleStyled>
 		</Flip>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me1} />
+			<AboutImgStyled loading="lazy" src={me1} />
 			<AboutTextStyled>
 				Everything started in 2016 in a small digital marketing agency. Back then, I thought that digital
 				marketing would be the love of my life because of its creativity. Soon our agency started bringing small
@@ -48,7 +48,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me3} />
+			<AboutImgStyled loading="lazy" src={me3} />
 			<AboutTextStyled>
 				Meanwhile, I was studying for my bachelor's degree at the University of National and World Economy in
 				Sofia and Software Engineering at Softuni. The official university gave me a lot of knowledge about the
@@ -56,7 +56,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me7} />
+			<AboutImgStyled loading="lazy" src={me7} />
 			<AboutTextStyled>
 				While studying and still working in the digital marketing agency, I began doing freelance projects. I
 				have worked with different agencies, tried to build a personal brand, and left dozens of satisfied
@@ -65,7 +65,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me2} />
+			<AboutImgStyled loading="lazy" src={me2} />
 			<AboutTextStyled>
 				I liked how practical and modern the education in Softuni is, and then I decided to become part of the
 				biggest programming academy in Bulgaria team. I started as an intern, but soon my passion for FE
@@ -74,7 +74,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me4} />
+			<AboutImgStyled loading="lazy" src={me4} />
 			<AboutTextStyled>
 				And then one of the most incredible things in my career happened. I realized that the more knowledge I
 				share, the happier I am. Four years after, with hundreds of students and more than 300+ lectures, I
@@ -82,7 +82,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me5} />
+			<AboutImgStyled loading="lazy" src={me5} />
 			<AboutTextStyled>
 				At the age of 22, I led a five-person team and conducted lectures in front of more than 300. And yes,
 				back then, programming was half of my job, and I felt the need to spend more time doing this to improve
@@ -91,7 +91,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me6} />
+			<AboutImgStyled loading="lazy" src={me6} />
 			<AboutTextStyled>
 				Meanwhile, I started running my podcast under the brand, which was the most listened
 				<a
@@ -104,7 +104,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me8} />
+			<AboutImgStyled loading="lazy" src={me8} />
 			<AboutTextStyled>
 				After a year and a half and a lot of thoughts like "FE is boring, maybe I should become Full-stack" I've
 				met Devexperts. The Fintech domain, combined with really well-written projects using a functional &
@@ -114,7 +114,7 @@ export const About = () => (
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled src={me9} />
+			<AboutImgStyled loading="lazy" src={me9} />
 			<AboutTextStyled>
 				Last but not least is my blogging experience. I'm on a break from teaching because of the pandemic (and
 				because I prefer teaching onsite). Although my English is not perfect, I decided to start sharing some
