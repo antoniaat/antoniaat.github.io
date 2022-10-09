@@ -47,10 +47,12 @@ export const PostPageContentStyled = styled.article`
 
 	h1 {
 		margin: 70px auto 30px auto;
+		line-height: 72px;
 	}
 
 	h2 {
 		margin: 40px auto;
+		line-height: 52px;
 	}
 
 	h4 {
