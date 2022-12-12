@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { wrapperStyles } from '../../styles/global.styled';
+import { respondTo } from '../../styles/breakpoints.styled';
 
 export const AboutWrapper = styled.section`
 	${wrapperStyles};
@@ -35,16 +36,19 @@ export const AboutTextStyled = styled.p`
 
 export const AboutDescriptionStyled = styled.article`
 	display: grid;
-	grid-template-columns: 300px 1fr;
-	grid-gap: 20px;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
 	text-align: left;
 
-	&:nth-child(even) {
-		padding-left: 150px;
-	}
+	${respondTo.desktop`
+		grid-template-columns: 300px 1fr;
+		grid-gap: 20px;
+
+		&:nth-child(even) {
+			padding-left: 150px;
+		}
+	`};
 `;
 
 export const AboutHeaderStyled = styled.header`

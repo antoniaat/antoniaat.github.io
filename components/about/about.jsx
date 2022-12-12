@@ -112,7 +112,7 @@ export const About = () => (
 				met Devexperts. The Fintech domain, combined with really well-written projects using a functional &
 				reactive approach, still fills every day with something new to learn. Then I also realized that in this
 				moment of my life, I want to work for a big company with well-organized processes and a dedicated person
-				for each role (not a fan of a one-man army anymore). Now I'm living my best live in this company, working as a FE team lead with a wonderful team.
+				for each role (not a fan of a one-man army anymore). Now I'm living my best life in this company, working as a FE team lead with a wonderful team.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
