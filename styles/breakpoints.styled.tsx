@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css, CSSObject } from 'styled-components';
 
 export const breakpoints = {
 	tablet: '600px',
@@ -6,12 +6,15 @@ export const breakpoints = {
 	desktop: '1200px',
 };
 
-export const respondTo = Object.keys(breakpoints).reduce((accumulator, label) => {
-	accumulator[label] = (...args) => css`
-		@media (min-width: ${breakpoints[label]}) {
-			${css(...args)};
-		}
-	`;
+export const respondTo = Object.keys(breakpoints).reduce(
+	(cb: Record<string, (styles: TemplateStringsArray) => ReturnType<typeof css>>, breakpointName) => {
+		cb[breakpointName] = (elementStyles: TemplateStringsArray) => css`
+			@media (min-width: ${breakpoints[breakpointName]}) {
+				${css(elementStyles)};
+			}
+		`;
 
-	return accumulator;
-}, {});
+		return cb;
+	},
+	{},
+);

@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL } from '../../scripts/i18n/main-info.js';
+import { CONTACT_EMAIL } from '../../i18n/main-info';
 import { Logo } from '../common/logo/logo';
 import {
 	NavigationStyled,

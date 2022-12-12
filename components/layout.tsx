@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import { WEBSITE_TITLE } from '../scripts/i18n/main-info.js';
+import { WEBSITE_TITLE } from '../i18n/main-info';
 import { Navigation } from './navigation/navigation';
 import { Footer } from './footer/footer';
-import { lightTheme, darkTheme, Theme } from '../styles/theme.styled.tsx';
+import { lightTheme, darkTheme, Theme } from '../styles/theme.styled';
 import { ThemeProvider } from 'styled-components';
 
 export const Layout = ({ children }) => {
