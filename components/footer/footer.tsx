@@ -26,7 +26,7 @@ export const Footer = () => (
 				{SOCIAL_MEDIA_ACCOUNTS.map(({ key, icon, url }) => (
 					<FooterIconsListItemStyled key={key}>
 						<FooterIconsListItemLinkStyled href={url}>
-							<FontAwesomeIcon icon={icon} />
+							<FontAwesomeIcon icon={icon as any} />
 						</FooterIconsListItemLinkStyled>
 					</FooterIconsListItemStyled>
 				))}

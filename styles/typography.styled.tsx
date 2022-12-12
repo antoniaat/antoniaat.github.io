@@ -1,28 +1,25 @@
 import { createGlobalStyle } from 'styled-components';
-import SairaExtraCondensedMedium from "../public/fonts/SairaExtraCondensed-Medium.ttf";
-import OpenSansRegular from "../public/fonts/OpenSans-Regular.ttf";
-import OpenSansLight from "../public/fonts/OpenSans-Light.ttf";
-import OpenSansBold from "../public/fonts/OpenSans-Bold.ttf";
+
 
 export const Typography = createGlobalStyle`
 	@font-face {
 		font-family: 'Saira Extra Condensed';
-		src: url(${SairaExtraCondensedMedium}) format('truetype');
+		src: url('fonts/SairaExtraCondensed-Medium.ttf') format('truetype');
 	}
 
 	@font-face {
 		font-family: 'Open Sans';
-		src: url(${OpenSansRegular}) format('truetype');
+		src: url('fonts/OpenSans-Regular.ttf') format('truetype');
 	}
 
 	@font-face {
 		font-family: 'Open Sans Light';
-		src: url(${OpenSansLight}) format('truetype');
+		src: url('fonts/OpenSans-Light.ttf') format('truetype');
 	}
 
 	@font-face {
 		font-family: 'Open Sans Bold';
-		src: url(${OpenSansBold}) format('truetype');
+		src: url('fonts/OpenSans-Bold.ttf') format('truetype');
 	}
 
 	*,

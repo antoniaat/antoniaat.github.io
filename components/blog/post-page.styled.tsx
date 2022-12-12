@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { wrapperStyles } from '../../styles/global.styled.tsx';
+import { wrapperStyles } from '../../styles/global.styled';
 
 export const PostPageStyled = styled.section`
 	${wrapperStyles};
