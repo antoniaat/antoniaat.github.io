@@ -9,7 +9,7 @@ import {
 
 export const CONTACT_EMAIL = 'antoniyaata@gmail.com';
 
-export const PROFESSION = "['Front-end Developer', 'Technical Trainer', 'Traveler', 'Book Lover']";
+export const PROFESSION = "['Team Lead', 'FE Developer', 'Technical Trainer', 'Traveler', 'Book Lover']";
 
 export const WEBSITE_TITLE = 'Antonia Atanasova | Front-end Developer, Technical Trainer';
 

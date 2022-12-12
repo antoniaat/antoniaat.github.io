@@ -17,6 +17,8 @@ import {
 	AboutTextStyled,
 } from './about.styled';
 
+const myAge = new Date().getFullYear() - new Date('05/03/1997').getFullYear();
+
 export const About = () => (
 	<AboutWrapper>
 		<Flip top>
@@ -31,7 +33,7 @@ export const About = () => (
 			<AboutTitleStyled>The culture-fit part</AboutTitleStyled>
 		</Flip>
 		<AboutTextStyled>
-			I'm 25 years old, born in Bulgaria, and currently relocating to Swiss. I am a very communicative,
+			I'm {myAge} years old, born in Bulgaria, but a citizen of the world. I am a very communicative,
 			open-minded, and good-hearted person. I love reading books, traveling, and being around nature. I always
 			strive to help others, and I genuinely believe that if we want to change the world, we should first start
 			changing ourselves.
@@ -110,7 +112,7 @@ export const About = () => (
 				met Devexperts. The Fintech domain, combined with really well-written projects using a functional &
 				reactive approach, still fills every day with something new to learn. Then I also realized that in this
 				moment of my life, I want to work for a big company with well-organized processes and a dedicated person
-				for each role (not a fan of a one-man army anymore).
+				for each role (not a fan of a one-man army anymore). Now I'm living my best live in this company, working as a FE team lead with a wonderful team.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
