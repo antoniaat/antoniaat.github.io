@@ -6,10 +6,10 @@ import { BlogPost } from '../components/blog/blog-post';
 import { BlogPageListStyled, BlogPageStyled } from '../components/blog/blog-page.styled';
 
 export const getStaticProps = async () => {
-	const files = fs.readdirSync(path.join('posts'));
+	const files = fs.readdirSync(path.join('posts/2022'));
 
 	const posts = files.map(filename => {
-		const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8');
+		const markdownWithMeta = fs.readFileSync(path.join('posts/2022', filename), 'utf-8');
 		const { data: frontMatter } = matter(markdownWithMeta);
 
 		return {

@@ -17,7 +17,7 @@ import {
 	AboutTextStyled,
 } from './about.styled';
 
-const myAge = new Date().getFullYear() - new Date('05/03/1997').getFullYear();
+const myCurrentAge = new Date().getFullYear() - new Date('05/03/1997').getFullYear();
 
 export const About = () => (
 	<AboutWrapper>
@@ -33,7 +33,7 @@ export const About = () => (
 			<AboutTitleStyled>The culture-fit part</AboutTitleStyled>
 		</Flip>
 		<AboutTextStyled>
-			I'm {myAge} years old, born in Bulgaria, but a citizen of the world. I am a very communicative,
+			I'm {myCurrentAge} years old, born in Bulgaria, but a citizen of the world. I am a very communicative,
 			open-minded, and good-hearted person. I love reading books, traveling, and being around nature. I always
 			strive to help others, and I genuinely believe that if we want to change the world, we should first start
 			changing ourselves.
