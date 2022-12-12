@@ -1,7 +1,6 @@
 import Flip from 'react-reveal/Flip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopyright } from '@fortawesome/free-solid-svg-icons';
-import { SOCIAL_MEDIA_ACCOUNTS } from '../../scripts/constants/global';
+import { SOCIAL_MEDIA_ACCOUNTS } from '../../scripts/i18n/main-info.js';
 import nextJsImg from '../../assets/images/nextjs.png';
 import {
 	FooterCopyrightMadeWithImgStyled,

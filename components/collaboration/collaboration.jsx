@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL } from '../../scripts/constants/global';
+import { CONTACT_EMAIL } from '../../scripts/i18n/main-info.tss';
 import {
 	CollaborationCtaLinkStyled,
 	CollaborationCtaStyled,

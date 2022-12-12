@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL } from '../../scripts/constants/global';
+import { CONTACT_EMAIL } from '../../scripts/i18n/main-info.ts';
 import projects from '../../scripts/constants/projects';
 import { WorkStyled, WorkTitleStyled, WorkLinkStyled, WorkListStyled } from './work.styled';
 import { Project } from './project';
