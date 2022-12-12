@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { WEBSITE_TITLE } from '../scripts/i18n/main-info.js';
 import { Navigation } from './navigation/navigation';
 import { Footer } from './footer/footer';
-import { lightTheme, darkTheme, Theme } from '../styles/theme.styled';
+import { lightTheme, darkTheme, Theme } from '../styles/theme.styled.tsx';
 import { ThemeProvider } from 'styled-components';
 
 export const Layout = ({ children }) => {

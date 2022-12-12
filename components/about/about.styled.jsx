@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { wrapperStyles } from '../../styles/global.styled';
-import { respondTo } from '../../styles/breakpoints.styled';
+import { wrapperStyles } from '../../styles/global.styled.tsx';
+import { respondTo } from '../../styles/breakpoints.styled.tsx';
 
 export const AboutWrapper = styled.section`
 	${wrapperStyles};
