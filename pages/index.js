@@ -6,9 +6,6 @@ const Home = () => (
 	<Layout>
 		<Header />
 		<About />
-		{/* <Skills /> */}
-		{/* <Work /> */}
-		{/* <Collaboration /> */}
 	</Layout>
 );
 
