@@ -34,6 +34,10 @@ export const Theme = createGlobalStyle`
   ${BlogPostStyled} {
     box-shadow: ${({ theme }) => theme.boxShadow};
   }
+
+  body::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.scrollbarColor};
+	}
 `;
 
 export const lightTheme = {
@@ -43,6 +47,7 @@ export const lightTheme = {
 	collaborationWrapper: 'var(--gray-800)',
   collaborationText: 'var(--white)',
   boxShadow: '0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8',
+  scrollbarColor: 'var(--gray-800)',
 };
 
 export const darkTheme = {
@@ -52,4 +57,5 @@ export const darkTheme = {
 	collaborationWrapper: 'var(--white)',
   collaborationText: 'var(--gray-900)',
   boxShadow: '0 5px 5px 0 rgb(3 2 2 / 50%), 0 0 0 1px #2b2b2b',
+  scrollbarColor: 'var(--cyan-50)',
 };

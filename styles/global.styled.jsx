@@ -13,15 +13,11 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body::-webkit-scrollbar {
-		width: 0.4em;
+		width: 0.2em;
 	}
 
 	body::-webkit-scrollbar-track {
 		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	}
-
-	body::-webkit-scrollbar-thumb {
-		background: var(--gray-800);
 	}
 
 	a {
