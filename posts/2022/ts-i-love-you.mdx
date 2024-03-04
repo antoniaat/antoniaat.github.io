@@ -1,0 +1,27 @@
+---
+title: 'TypeScript, I love you'
+description: 'My favourite lessons from reading the Effective TypeScript book or why should also love it'
+date: '26 October, 2022'
+slug: 'typescript-i-love-you'
+imgSrc: 'blog-img-6.jpeg'
+---
+
+#### _2 minutes reading time_
+
+#### _26 October, 2022, Antonia Atanasova_
+
+Here we go again with the knowledge-sharing sessions from a book. This time we will dive into a purely technical book, which I liked a lot and want to recommend to every FE engineer who uses TypeScript - Effective TypeScript by Dan Vanderkam. My point of view will be what I love most in TypeScript, so I will present you the principles from the book that made the biggest impression on me.
+
+## Get Comfortable with Structural Typing
+
+The world is not only interfaces and types, so it was quite interesting to see examples of what we can expect from structural typing. Of course, you may not even hear of it because when a person declares a function with specific parameters, we are usually strict with this contract. But it is better to know how the language works and avoid such traps in the future (who knows how many bugs you've produced because of not knowing this). Take a look at the following example of two interfaces and a function for calculating vector length:
+
+<iframe src="https://codesandbox.io/embed/typescript-playground-export-forked-piyevv?fontsize=14&hidenavigation=1&theme=dark&view=editor"
+     title="TypeScript Playground Export (forked)"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+  ></iframe>
+
+It may seem strange to you why the fuck this is compiling without any issues. We know how capricious TypeScript can sometimes be, so we can't assume this is an accident. There is no relation between the two interfaces, but you can use the same function for calculating the width of both types.
+
+## TypeScript's type system models JavaScript's runtime behavior.
