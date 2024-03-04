@@ -6,7 +6,7 @@ import predictTheUnpredictable from '../../public/home/predict-the-unpredictable
 import publicSpeaking from '../../public/home/public-speaking.webp';
 import podcast from '../../public/home/it-talks-podcast.webp';
 import selfieTime from '../../public/home/selfie-time.webp';
-import books from '../../public/home/books.webp';
+import me from '../../public/home/me.jpeg';
 import ybc from '../../public/home/ybc.webp';
 import {
 	AboutWrapper,
@@ -22,106 +22,77 @@ const myCurrentAge = new Date().getFullYear() - new Date('05/03/1997').getFullYe
 export const About = () => (
 	<AboutWrapper>
 		<Flip top>
-			<AboutTitleStyled>Hi, I’m Tony. Nice to meet you.</AboutTitleStyled>
+			<AboutTitleStyled>
+				Здравей, радвам се, че си тук! Аз съм Тони.
+				</AboutTitleStyled>
 		</Flip>
 		<AboutHeaderStyled>
 			<AboutTextStyled>
-				You can be sure that the last thing I want is to lose your time, so I'll try to be as brief as possible.
+				Последното нещо, което искам е да губя времето ти, затова ще се опитам да бъда максимално кратка.
 			</AboutTextStyled>
 		</AboutHeaderStyled>
-		<Flip top>
-			<AboutTitleStyled>The culture-fit part</AboutTitleStyled>
-		</Flip>
+	
 		<AboutTextStyled>
-			I'm {myCurrentAge} years old, born in Bulgaria, but a citizen of the world. I am a very communicative,
-			open-minded, and good-hearted person. I love reading books, traveling, and being around nature. I always
-			strive to help others, and I genuinely believe that if we want to change the world, we should first start
-			changing ourselves.
+			На {myCurrentAge} години съм, родена в топлия южен град Петрич. Определям се като един щастлив екстроверт с добро сърце. Обожавам да чета, да пътувам, да съм сред природата и да прекарвам време с прекрасните хора в живота ми. Изключително много се зареждам, когато помагам на други хора и вярвам на сто процента, че ако човек иска да промени света, трябва първо да започне със себе си.
 		</AboutTextStyled>
-		<Flip top>
-			<AboutTitleStyled>The experience part</AboutTitleStyled>
-		</Flip>
+		
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={codingSelfie} />
 			<AboutTextStyled>
-				Everything started in 2016 in a small digital marketing agency. Back then, I thought that digital
-				marketing would be the love of my life because of its creativity. Soon our agency started bringing small
-				business card websites to its customers, and then I fell in love with programming.
+				Всичко започна през 2016 г. в малка маркетинг агенция. Тогава си мислех, че маркетингът ще бъде любовта на живота ми, заради креативността и желанието с които работех. Скоро обаче агенцията започна да предлага като услуга изготвяване на уеб сайтове и тогава за първи път се сблъсках с програмирането. Може да предположите, че ми хареса.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={rightingSoftware} />
 			<AboutTextStyled>
-				Meanwhile, I was studying for my bachelor's degree at the University of National and World Economy in
-				Sofia and Software Engineering at Softuni. The official university gave me a lot of knowledge about the
-				business world, but the academy was the one that taught me how to write code.
+				Междувременно следвах "Бизнес Информатика" в УНСС и карах курсовете на СофтУни по програмиране. И двете места ми дадоха много и ми помогнаха да се развия като човек и професионалист.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={ybc} />
 			<AboutTextStyled>
-				While studying and still working in the digital marketing agency, I began doing freelance projects. I
-				have worked with different agencies, tried to build a personal brand, and left dozens of satisfied
-				customers. I loved freelance work because of the freedom I've had. Although, I was always responsible
-				and correct with my clients.
+				Малко по-малко с натрупването на повече опит започнах да работя за различни агенции като подизпълнител и да поемам проекти на свободни начала сама. Това беше ценна част от моя път, защото ме научи да работя с всякакви клиенти и научих много за управлението на времето, проектите и финансите си. Обичах фрийланс работата заради свободата, която ми даваше и около 3-4 години това беше основният ми източник на доходи.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={programmingBasics} />
 			<AboutTextStyled>
-				I liked how practical and modern the education in Softuni is, and then I decided to become part of the
-				biggest programming academy in Bulgaria team. I started as an intern, but soon my passion for FE
-				appeared, and I was leading the JavaScript program there. I worked passionately on the FE program
-				improvement with an incredible team of five people under my lead.
+				Още по време на първите курсове много харесах модела на СофтУни, енергията на хората там и практическата насоченост на обученията. Докато все още бях студентка получих възможността да стана част от екипа и така започнаха най-вълнуващите години в живота ми. Малко по малко през годините отговорностите ми нарастваха и станах лидер на екипът, отговорен за качеството на обученията в цялата JavaScript пътека. Бях отговорна и за лекторския екип и корпоративните обучения на организацията.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={predictTheUnpredictable} />
 			<AboutTextStyled>
-				And then one of the most incredible things in my career happened. I realized that the more knowledge I
-				share, the happier I am. Four years after, with hundreds of students and more than 300+ lectures, I
-				couldn't be more proud of this journey.
+				Докато работех в СофтУни открих и голямата си страст към обученията. Осъзнах, че да помагам и уча другите е кауза за която си заслужава да се боря. Около четири години преподавах активно в различни курсове по програмиране и съм благодарна за всички прекрасни хора, които срещнах през това време. 300+ лекции по-късно спрях да водя цялостни обучения, но все още се появявам тук-там като заместник на някой лектор от Front-End пътеката.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={publicSpeaking} />
 			<AboutTextStyled>
-				At the age of 22, I led a five-person team and conducted lectures in front of more than 300. And yes,
-				back then, programming was half of my job, and I felt the need to spend more time doing this to improve
-				my technical expertise. That's why I decided to move to the development team in the same company and
-				start working behind the educational software we were using.
+				На 22 годишна възраст вече бях постигнала и научила толкова много и реших, че е време да се отдам повече на техническата част от нашата професия и да стана програмист на пълен работен ден. Тогава се преместих в development екипа на организацията и започнах да работя по платформите и.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={podcast} />
 			<AboutTextStyled>
-				Meanwhile, I started running my podcast under the brand, which was the most listened
+				Междувременно започнах да водя и подкаст под името 
 				<a
 					target={'_blank'}
 					href="https://www.youtube.com/watch?v=91LKVhfH1kc&list=PLlcYRzEHmgNnPf45OpR_yL6yDZVnNdLUE&index=4">
-					{' '}
-					podcast{' '}
-				</a>
-				about development back then in Bulgaria.
+					"IT Talks"
+				</a>, където си говорех с различни специалисти от ИТ сферата. Сега вече това не е нещо УАУ, но държа да кажа, че тогава нямаше друг подкаст в България за ИТ теми и това беше много вълнуващо начинание.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={selfieTime} />
 			<AboutTextStyled>
-				After a year and a half and a lot of thoughts like "FE is boring, maybe I should become Full-stack" I've
-				met Devexperts. The Fintech domain, combined with really well-written projects using a functional &
-				reactive approach, still fills every day with something new to learn. Then I also realized that in this
-				moment of my life, I want to work for a big company with well-organized processes and a dedicated person
-				for each role (not a fan of a one-man army anymore). Now I'm living my best life in this company, working as a FE team lead with a wonderful team.
+				След около година и половина се почувствах леко изчерпана и отегчена от Front-End разработката и започнах да търся нещо по-предизвикателно. Тогава LinkedIn ме срещна с Devexperts - компанията в която работя и до днес. Devexperts беше шамар в лицето на мислите ми, че Front-end-a е скучен и е само картинки и CSS. Набързо научих какво е реактивно програмиране, фунцкионално програмиране и как се работи с live data и стриймове. И докато все още си тръшках главата с най-технически предизвикателните задачи в живота ми, започнах малко по-малко да виждам поле за изява като лидер на екипа в който бях. Колкото и да обичам програмирането беше време да се примиря, че моята сила е в управлението на хора и проекти. Така с усмивка и нова доза вдъхновение станах Team Lead на Front-end екип от 9 души в най-големия проект на компанията.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 		<AboutDescriptionStyled>
-			<AboutImgStyled loading="lazy" src={books} />
+			<AboutImgStyled loading="lazy" src={me} />
 			<AboutTextStyled>
-				Last but not least is my blogging experience. I'm on a break from teaching because of the pandemic (and
-				because I prefer teaching onsite). Although my English is not perfect, I decided to start sharing some
-				thoughts about life and programming. Still new to that and still trying to gather more posts before I
-				start improving the SEO, so your feedback is kindly welcomed. :)
+				Едно от стъпалата, което дълги години ме очакваше беше изграждането на личен бранд. Това е едно от нещата, за които трябва да се почувстваш достатъчно израстнал и не исках да прибързвам с него. Преди около година стартирах YouTube канал и Instagram страница, където се старая редовно да споделям по нещо полезно и вдъхновяващо. Красотата на това да правиш нещо свое е, че нямаш никакви ограничения, затова и тествам различни формати. Подкаст епизоди, видеа само с мен, наръчници в писмен формат, кратки видеа, малки курсове - всичко това са неща, които ще виждате от мен в бъдеще.
 			</AboutTextStyled>
 		</AboutDescriptionStyled>
 	</AboutWrapper>

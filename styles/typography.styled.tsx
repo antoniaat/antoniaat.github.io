@@ -58,4 +58,8 @@ export const Typography = createGlobalStyle`
 	h5 {
 		font-size: 24px;
 	} 
+
+	p {
+		font-size: 17px;
+	}
 `;

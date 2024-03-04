@@ -11,6 +11,7 @@ export const AboutWrapper = styled.section`
 
 export const AboutTitleStyled = styled.h2`
 	margin: 0 auto 20px auto;
+	font-family: var(--primary-font-bold);
 `;
 
 export const AboutImgStyled = styled.img`

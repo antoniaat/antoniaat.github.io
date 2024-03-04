@@ -1,7 +1,6 @@
 import Flip from 'react-reveal/Flip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SOCIAL_MEDIA_ACCOUNTS } from '../../i18n/main-info';
-import nextJsImg from '../../assets/images/nextjs.png';
 import {
 	FooterCopyrightMadeWithImgStyled,
 	FooterCopyrightMadeWithLinkStyled,
@@ -33,14 +32,8 @@ export const Footer = () => (
 			</FooterIconsListStyled>
 			<FooterCopyrightStyled>
 				<FooterCopyrightTextStyled>
-					All rights reserved © Antonia Atanasova {CURRENT_YEAR}
+					Всички права са запазени © Антония Атанасова {CURRENT_YEAR}
 				</FooterCopyrightTextStyled>
-				<FooterCopyrightMadeWithStyled>
-					Made with
-					<FooterCopyrightMadeWithLinkStyled href="https://nextjs.org/">
-						<FooterCopyrightMadeWithImgStyled src={nextJsImg} alt="Next.js" />
-					</FooterCopyrightMadeWithLinkStyled>
-				</FooterCopyrightMadeWithStyled>
 			</FooterCopyrightStyled>
 		</Flip>
 	</FooterStyled>

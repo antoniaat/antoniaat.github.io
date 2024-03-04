@@ -76,21 +76,3 @@ export const FooterCopyrightTextStyled = styled.p`
 	align-items: center;
     justify-content: center;
 `;
-
-export const FooterCopyrightMadeWithStyled = styled.p`
-	display: grid;
-	grid-auto-flow: column;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	grid-gap: 10px;
-	margin-top: 20px;
-	font-size: 14px;
-`;
-
-export const FooterCopyrightMadeWithLinkStyled = styled.a``;
-
-export const FooterCopyrightMadeWithImgStyled = styled.img`
-	filter: brightness(0.3) invert(1);
-	max-width: 50px;
-`;

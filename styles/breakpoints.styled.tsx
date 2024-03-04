@@ -1,6 +1,7 @@
-import { css, CSSObject } from 'styled-components';
+import { css } from 'styled-components';
 
 export const breakpoints = {
+	mobile: '450px',
 	tablet: '600px',
 	tabletLandscape: '900px',
 	desktop: '1200px',

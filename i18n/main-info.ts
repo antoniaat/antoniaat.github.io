@@ -22,7 +22,7 @@ export const SOCIAL_MEDIA_ACCOUNTS = [
 	{
 		key: 'ig',
 		icon: faInstagram,
-		url: 'https://www.instagram.com/antoniyaat/',
+		url: 'https://www.instagram.com/antoniya.at/',
 	},
 	{
 		key: 'yt',
