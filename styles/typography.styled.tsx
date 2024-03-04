@@ -36,6 +36,10 @@ export const Typography = createGlobalStyle`
 	h6 {
 		font-family: var(--secondary-font);
 	}
+
+	a {
+		text-decoration: none;
+	}
 	
 	h1 {
 		font-size: 55px;

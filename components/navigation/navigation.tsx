@@ -7,8 +7,7 @@ import {
 	NavigationBtnLinkStyled,
 	ThemeButtonStyled,
 	ThemeButtonImgStyled,
-	HelloBtnStyled,
-	BlogBtnStyled,
+	MenuItemBtnStyled,
 } from './navigation.styled';
 import sunImg from '../../public/common/sun.png';
 import moonImg from '../../public/common/moon.png';
@@ -22,12 +21,15 @@ export const Navigation = ({ toggleTheme, isDarkTheme }) => {
 				<NavigationListItemStyled>
 					<Logo />
 				</NavigationListItemStyled>
-				<HelloBtnStyled>
+				<MenuItemBtnStyled>
 					<NavigationBtnLinkStyled href={`mailto:${CONTACT_EMAIL}`}>SAY HELLO</NavigationBtnLinkStyled>
-				</HelloBtnStyled>
-				<BlogBtnStyled>
+				</MenuItemBtnStyled>
+				<MenuItemBtnStyled>
 					<NavigationBtnLinkStyled href="/blog">BLOG</NavigationBtnLinkStyled>
-				</BlogBtnStyled>
+				</MenuItemBtnStyled>
+				<MenuItemBtnStyled>
+					<NavigationBtnLinkStyled href="https://www.youtube.com/channel/UCYO3R9oWbDsDnKOkls0OPhA">YOUTUBE CHANNEL</NavigationBtnLinkStyled>
+				</MenuItemBtnStyled>
 				<ThemeButtonStyled onClick={toggleTheme}>
 					<ThemeButtonImgStyled src={themeIcon} />
 				</ThemeButtonStyled>

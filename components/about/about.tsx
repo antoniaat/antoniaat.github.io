@@ -39,7 +39,7 @@ export const About = () => (
 			changing ourselves.
 		</AboutTextStyled>
 		<Flip top>
-			<AboutTitleStyled>The official part</AboutTitleStyled>
+			<AboutTitleStyled>The experience part</AboutTitleStyled>
 		</Flip>
 		<AboutDescriptionStyled>
 			<AboutImgStyled loading="lazy" src={codingSelfie} />

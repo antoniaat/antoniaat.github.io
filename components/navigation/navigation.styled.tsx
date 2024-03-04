@@ -14,13 +14,10 @@ export const NavigationListStyled = styled.ul`
 	padding: 20px 0;
 `;
 
-export const HelloBtnStyled = styled.a`
-	justify-self: end;
+export const MenuItemBtnStyled = styled.a`
+
 `;
 
-export const BlogBtnStyled = styled.a`
-	justify-self: start;
-`;
 
 export const NavigationListItemStyled = styled.li``;
 export const NavigationBtnLinkStyled = styled.a`
